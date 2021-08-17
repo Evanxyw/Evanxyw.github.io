@@ -184,7 +184,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="通信业务流程图"><a href="#通信业务流程图" class="headerlink" title="通信业务流程图"></a>通信业务流程图</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    title: 通信业务流程图</span><br><span class="line">    stub -&gt;&gt; iot: send tcp，通道注册，当前iot_instanceId</span><br><span class="line">    iot -&gt;&gt; register: 服务启动</span><br></pre></td></tr></table></figure>
+          <h2 id="通信业务流程图"><a href="#通信业务流程图" class="headerlink" title="通信业务流程图"></a>通信业务流程图</h2><pre class="mermaid">sequenceDiagram
+    title: 通信业务流程图
+    stub ->> iot: send tcp，通道注册，当前iot_instanceId
+    iot ->> register: 服务启动</pre>
       
     </div>
 
@@ -417,6 +420,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
   
