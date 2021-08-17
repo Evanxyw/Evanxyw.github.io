@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>XCPP 通信业务流程图</title>
+    <url>/2021/08/17/%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84%E6%97%B6%E5%BA%8F%E5%9B%BE/</url>
+    <content><![CDATA[<h2 id="通信业务流程图"><a href="#通信业务流程图" class="headerlink" title="通信业务流程图"></a>通信业务流程图</h2><pre class="mermaid">sequenceDiagram
+    title: 通信业务流程图
+    stub ->> iot: send tcp，通道注册，当前iot_instanceId
+    iot ->> register: 服务启动</pre>]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+  </entry>
+</search>
